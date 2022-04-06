@@ -1,24 +1,46 @@
-import logo from './logo.svg';
+import {useState} from 'react';
 import './App.css';
+import Router from './components/Router';
+import meal from "./assets/meal.svg";
+import "./components/header/Header.css";
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const handleSubmit = (e) => { 
+   
+    e.preventDefault();
+
+setIsLoggedIn(true)
+
+    
+}
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+     
+     
+   { !isLoggedIn ? (<div className="container1">
+            <div className="container2">
+               
+                    <img src={meal} alt="" style={{ width: "150px" }} />
+                    <h1 className="head">{"<Fatisenko />"} Recipe</h1>
+                    <form onSubmit={handleSubmit }>
+                        <input placeholder="USERNAME" required/>
+                        <input type="password" placeholder="PASSWORD" required/> 
+                        <button  >LOGIN</button>
+                    </form>
+             
+
+
+            </div>
+        </div>) :
+   ( <Router />)}
+      
+    
+    </div>  
+     
+    
   );
 }
 

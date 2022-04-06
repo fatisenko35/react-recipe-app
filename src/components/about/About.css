@@ -1,0 +1,42 @@
+.code{
+   width: 500px; 
+}
+.wrapper-about{
+   background-color: #00ADB5;
+   min-height: 100vh;
+   display:flex;
+   flex-direction: column;
+   justify-content:space-evenly;
+   align-items:center;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.head-about span {
+   color: #fff;
+   font-size:3rem
+}
+
+.personal-content{
+  /* max-width: 1000px;
+   margin: auto; */
+   text-align: right;
+   padding:25px;
+   max-width: 600px;
+   border: 1px solid #fff;
+ 
+}
+.personal-content * {
+   padding:10px
+}
+
+.personal-content h3{
+   font-size: 20px;
+}
+.personal-content h4{
+   font-size: 18px;
+}
+.personal-content h2{
+   font-size: 22px;
+}
+.email{
+color: #fff;
+}

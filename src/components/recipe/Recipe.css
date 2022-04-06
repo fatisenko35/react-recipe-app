@@ -1,0 +1,89 @@
+.recipe{
+    background-color:#00ADB5;
+    padding: 0;
+    margin:0;
+    min-height: 100%;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    min-width: 300px;
+    min-height: 300px;
+    background-color:#E1F1DD;
+
+}
+.chef{
+    width: 750px;
+    height: 500px;
+    margin:0 auto;
+}
+.cards img {
+    width: 150px;
+    height: 150px;
+}
+.cards-container{
+    min-height: 100vh;
+    position: relative;
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 15px;
+    column-gap: 15px;
+    padding:3rem;
+    
+}
+.cards button {
+    width: 72px;
+    height:32px;
+    background-color: #00ADB5;
+    font-size: 12px;
+    padding:5px;
+    
+}
+.cards h1 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    
+}
+.cards * {
+    margin-bottom:20px;
+    
+}
+.cards {
+    position: relative;
+    padding: 0;
+}
+
+.search-div input,
+.search-div button,
+.search-div select {
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+.search-div h1{
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .cards-container{
+        grid-template-columns: auto;
+
+    }
+
+    .chef{
+        width: 450px;
+    }
+}
+@media (max-width: 560px) {
+    .cards-container{
+        grid-template-columns: auto;
+
+    }
+
+    .chef{
+        width: 350px;
+    }
+}
